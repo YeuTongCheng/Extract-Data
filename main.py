@@ -1,13 +1,5 @@
-"""
-Week 2 practice project template for Python Data Visualization
-Compute county centers from an SVG image of USA that includes county boundaries
-Output a CSV file with FIPS code and county centers
-"""
-
 import math
 import csv
-
-
 
 # Parse the XMLin USA SVG file extract county attributes
 # Derive from example code - https://stackoverflow.com/questions/15857818/python-svg-parser
@@ -40,7 +32,7 @@ def test_get_attributes(svg_file_name):
     print()
     print(county_attribute_list[1000])
     
-test_get_attributes("/Users/chengnicole/Downloads/USA_Counties_2014.svg")
+test_get_attributes("USA_Counties_2014.svg")
 
 #Output from tests
 #3143
@@ -49,8 +41,6 @@ test_get_attributes("/Users/chengnicole/Downloads/USA_Counties_2014.svg")
 #('05071', 'M 317.43698,203.82 L 319.27598,203.843 L 322.97698,204.189 L 322.99398,205.892 L 322.45798,206.989 L 321.89498,207.583 L 321.70498,207.588 L 321.72898,209.44 L 319.85398,208.364 L 319.41098,208.539 L 318.61698,208.792 L 317.41498,208.931 L 317.43698,203.82')
 #
 #('21119', 'M 425.90398,172.667 L 426.90998,172.816 L 427.64998,173.226 L 427.74298,173.371 L 427.79298,173.794 L 427.77098,174.145 L 427.95498,174.685 L 428.00898,174.74 L 428.23498,174.871 L 428.42898,174.957 L 428.23098,175.164 L 427.55398,175.394 L 426.85598,175.88 L 426.66598,176.124 L 426.46398,176.327 L 426.06698,176.642 L 425.84798,176.639 L 425.66498,176.512 L 424.04398,173.987 L 425.64298,172.487 L 425.90398,172.667')    
-
-
 
 # Code to compute the center of a county from its boundary (as a string)
 
